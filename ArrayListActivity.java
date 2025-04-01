@@ -1,4 +1,4 @@
-
+import java.util.Collections;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Scanner;
@@ -61,6 +61,7 @@ public class ArrayListActivity {
 
             merged.addAll(numbers); //combines 2 lists
             merged.addAll(numbers2);
+            Collections.sort(merged);
             System.out.println("Your combined list: " + merged);
 
             HashSet<Integer> noDup = new HashSet<Integer>(merged); // removes duplicates
